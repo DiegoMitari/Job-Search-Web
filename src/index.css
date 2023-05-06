@@ -42,3 +42,7 @@ li:hover::before {
 .card {
   background-color: #f1f4f8;
 }
+
+.singleJob {
+  box-shadow: 4px 6px 9px 0px rgba(0, 0, 0, 0.15);
+}

@@ -62,7 +62,7 @@ const Jobs = () => {
           Data.map((element) => {
             return (
               <div key={element.id} className="group group/item singleJob h-[500px] w-[260px] p-[20px] bg-white rounded-lg
-                hover:bg-blueColor shadow-lg shadow-greyIsh hover:shadow-lg"
+                hover:bg-blueColor shadow shadow-greyIsh hover:shadow-lg"
               >
 
                 <span className="flex justify-between items-center gap-4">
