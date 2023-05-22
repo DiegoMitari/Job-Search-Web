@@ -12,7 +12,7 @@ const Value = () => {
         and interview questions. See what others are looking for on JobSearch today.
       </h1>
 
-      <div className="grid gap-[5rem] grid-cols-3 items-center">
+      <div className="container-slider grid gap-[5rem] grid-cols-3 items-center">
         {/* first card */}
         <div className="singleGrid rounded-[10px] hover:bg-[#f7edf5] p-[1.5rem] px-[2.5rem]">
           <div className="flex items-center gap-3">
@@ -68,8 +68,8 @@ const Value = () => {
         </div>
       </div>
 
-      <div className='card py-[4rem] px-[5rem] flex justify-between rounded-[10px]'>
-        <div>
+      <div className='card-cta py-[4rem] px-[5rem] flex justify-between rounded-[10px]'>
+        <div className='text-cta'>
           <h1 className='text-blueColor text-[30px] font-bold'>Ready to switch a career </h1>
           <h2 className='text-textColor text-[25px] font-bold'>Let's get started!</h2>
         </div>

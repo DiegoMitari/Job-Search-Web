@@ -4,46 +4,46 @@ import { CiLocationOn } from 'react-icons/ci'
 const Search = () => {
   return (
     <div className="searchDiv grid gap-5 bg-greyIsh rounded-[10px] p-[3rem]">
-      <form action="">
+      <form action="" className="firstDiv">
         {/*Search by job */}
-        <div className="firstDiv flex justify-between items-center rounded-[8px]
-          gap-[10px] bg-white p-5 shadow-md hover:shadow-lg shadow-greyIsh-700">
-          
+        <div className="inputSearch flex justify-between items-center rounded-[8px]
+            gap-[10px] bg-white p-5 shadow-md hover:shadow-lg shadow-greyIsh-700">
+
           {/*Search by Jobs */}
           <div className="flex gap-2 items-center">
-            <AiOutlineSearch className='text-[25px] text-[#a5a6a6] hover:text-textColor icon'/>
+            <AiOutlineSearch className='text-[25px] text-[#a5a6a6] hover:text-textColor icon' />
 
             <input type='text' className='bg-transparent text-blue-500 
-             w-100 focus:outline-none' placeholder='Search your next job..'/>
+              w-100 focus:outline-none' placeholder='Search your next job..' />
 
             <AiOutlineCloseCircle className='text-[25px] text-[#a5a6a6] 
-            hover:text-textColor icon'/>
+              hover:text-textColor icon'/>
           </div>
 
           {/*Search by company */}
           <div className="flex gap-2 items-center">
-            <BsHouseDoor className='text-[25px] text-[#a5a6a6] hover:text-textColor icon'/>
+            <BsHouseDoor className='text-[25px] text-[#a5a6a6] hover:text-textColor icon' />
 
             <input type='text' className='bg-transparent text-blue-500 
-             w-100 focus:outline-none' placeholder='Search by company...'/>
+              w-100 focus:outline-none' placeholder='Search by company...' />
 
             <AiOutlineCloseCircle className='text-[25px] text-[#a5a6a6] 
-            hover:text-textColor icon'/>
+              hover:text-textColor icon'/>
           </div>
 
           {/*Search by location */}
           <div className="flex gap-2 items-center">
-            <CiLocationOn className='text-[25px] text-[#a5a6a6] hover:text-textColor icon'/>
+            <CiLocationOn className='text-[25px] text-[#a5a6a6] hover:text-textColor icon' />
 
             <input type='text' className='bg-transparent text-blue-500 
-             w-100 focus:outline-none' placeholder='Search by location...'/>
+              w-100 focus:outline-none' placeholder='Search by location...' />
 
             <AiOutlineCloseCircle className='text-[25px] text-[#a5a6a6] 
-            hover:text-textColor icon'/>
+              hover:text-textColor icon'/>
           </div>
 
           <button className='bg-blueColor h-full p-2 px-5 rounded-[5px] 
-          text-white text-[17px] cursor-pointer hover:bg-blue-300'>Search</button>
+            text-white text-[17px] cursor-pointer hover:bg-blue-300'>Search</button>
         </div>
       </form>
 
@@ -52,8 +52,8 @@ const Search = () => {
         <div className='singleSearch flex items-center gap-2'>
           <label htmlFor='relevance' className='text-[#808080] font-samibold'>Sort By:</label>
 
-          <select name='' 
-            id='relevance' 
+          <select name=''
+            id='relevance'
             className='bg-white rounded-[3px] px-4 py-1'
           >
             <option>Relevance</option>
@@ -66,8 +66,8 @@ const Search = () => {
         <div className='singleSearch flex items-center gap-2'>
           <label htmlFor='type' className='text-[#808080] font-samibold'>Type:</label>
 
-          <select name='' 
-            id='type' 
+          <select name=''
+            id='type'
             className='bg-white rounded-[3px] px-4 py-1'
           >
             <option>Full-Time</option>
@@ -80,8 +80,8 @@ const Search = () => {
         <div className='singleSearch flex items-center gap-2'>
           <label htmlFor='level' className='text-[#808080] font-samibold'>Level:</label>
 
-          <select name='level' 
-            id='' 
+          <select name='level'
+            id=''
             className='bg-white rounded-[3px] px-4 py-1'
           >
             <option>Beginner</option>

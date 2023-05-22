@@ -1,4 +1,12 @@
+import { useRef } from 'react';
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
+
 const NavBar = () => {
+  const navRef = useRef();
+
+  const showNavbar = () => {
+    navRef.current.classList.toggle('menu_visible');
+  }
   return (
     <div className="navBar flex justify-between items-center p-[3rem]">
       <div className="logoDiv">
@@ -7,7 +15,12 @@ const NavBar = () => {
         </h1>
       </div>
 
-      <div className="menu flex gap-8">
+      <div className="nav-toggle" onClick={showNavbar}>
+        <AiOutlineMenu size={30} />
+      </div>
+
+      <div className="menu flex gap-8" ref={navRef}>
+        <AiOutlineClose size={30} className='text-center md:hidden' onClick={showNavbar} />
         <li className="menuList text-[#6f6f6f] hover:text-blueColor">Jobs</li>
         <li className="menuList text-[#6f6f6f] hover:text-blueColor">Companies</li>
         <li className="menuList text-[#6f6f6f] hover:text-blueColor">About</li>
@@ -17,7 +30,11 @@ const NavBar = () => {
         <li className="menuList text-[#6f6f6f] hover:text-blueColor">Register</li>
       </div>
     </div>
+
   );
 };
 
 export default NavBar;
+
+
+// https://codesandbox.io/s/tailwind-react-hamburger-menu-tjhfyx?file=/src/components/Header/Header.js:242-1892

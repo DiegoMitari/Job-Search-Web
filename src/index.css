@@ -8,8 +8,15 @@
   font-family: 'Poppins', sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: white;
+  width: 100vw;
 }
 
 li {
@@ -43,6 +50,158 @@ li:hover::before {
   background-color: #f1f4f8;
 }
 
+.singleGrid>p {
+  margin: 0 auto;
+}
+
 .singleJob {
   box-shadow: 4px 6px 9px 0px rgba(0, 0, 0, 0.15);
+}
+
+.hideMenuNav {
+  display: none;
+}
+
+.showMenuNav {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 540px) {
+
+  .container {
+    width: 100%;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .menu {
+    /* visibility: hidden;
+    opacity: 0; */
+    position: absolute;
+    top: 100px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #2a68ff;
+    font-size: 25px;
+    gap: 1.75rem;
+    transition: 300ms;
+    transform: translateX(300vw);
+  }
+
+  .menu_visible {
+    /* visibility: visible;
+    opacity: 1; */
+    transform: none;
+    z-index: 1;
+  }
+
+  .searchDiv {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2.25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  form {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+
+  .inputSearch {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .secDiv {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .cardOne {
+    width: 75%
+  }
+
+  .cardOne p {
+    line-height: 1.9;
+  }
+
+  .card-cta {
+    padding: 1.5rem;
+  }
+
+  .text-cta {
+    width: 65%;
+  }
+
+  .text-cta>h1 {
+    font-size: 26px;
+  }
+
+  .text-cta>h2 {
+    font-size: 21px;
+  }
+
+  .card-cta button {
+    padding: 1rem;
+  }
+
+  .container-slider {
+    display: flex;
+    height: 200px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1.25rem;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+  }
+
+  .singleGrid {
+    position: relative;
+    min-width: 90%;
+    height: 90%;
+    width: 90%;
+    padding: 1.5rem;
+    scroll-snap-align: center;
+  }
+
+  .singleGrid:first-child {
+    margin-left: 5%;
+  }
+
+  .singleGrid:last-child {
+    margin-right: 5%;
+  }
 }

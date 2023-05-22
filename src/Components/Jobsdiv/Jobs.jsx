@@ -1,5 +1,9 @@
 import { BiTimeFive } from 'react-icons/bi'
 import line from '../../assets/line.png'
+import { db } from "../firebase.js";
+import { collection, getDocs } from "firebase/firestore";
+import { useState, useEffect } from 'react';
+
 
 // All the jobs
 const Data = [
@@ -54,14 +58,40 @@ const Data = [
   },
 ];
 
+//call the bd in firestore
+
+
+async function getJobs() {
+  const querySnapshot = await getDocs(collection(db, 'jobs'));
+  const jobs = [];
+  querySnapshot.forEach((doc) => {
+    jobs.push({
+      id: doc.id,
+      ...doc.data()
+    })
+  })
+  return jobs;
+}
+
 const Jobs = () => {
+
+  const [jobs, setJobs] = useState([]);
+
+  useEffect(() => {
+    const data = getJobs();
+    setJobs(data);
+    console.log('-------traemos el useState jobs--------');
+    console.log(jobs);
+
+  }, []);
+
   return (
     <div className="">
       <div className="jobContainer flex gap-10 justify-center flex-wrap items-center py-10">
         {
           Data.map((element) => {
             return (
-              <div key={element.id} className="group group/item singleJob h-[500px] w-[260px] p-[20px] bg-white rounded-lg
+              <div key={element.id} className="cardOne group group/item singleJob h-[500px] w-[260px] p-[20px] bg-white rounded-lg
                 hover:bg-blueColor shadow shadow-greyIsh hover:shadow-lg"
               >
 
