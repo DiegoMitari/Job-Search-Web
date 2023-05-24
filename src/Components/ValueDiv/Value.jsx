@@ -5,7 +5,7 @@ import security from '../../assets/security.png'
 const Value = () => {
   return (
     <div className="mb-[2rem] mt-[2rem]">
-      <h1 className="text-textColor text-[25px] py-[1rem] pb-[3rem] 
+      <h1 className="text-value text-textColor text-[25px] py-[1rem] pb-[3rem] 
         font-bold block opacity-[.7]"
       >
         Millions of people are searching for jobs, salary information, company reviews,
@@ -58,12 +58,12 @@ const Value = () => {
             </div>
 
             <span className="font-semibold text-textColor text-[18px]">
-              Simplicity
+              Inclution
             </span>
           </div>
 
           <p className="text-[15px] text-textColor py-[1rem] opacity-[.7]">
-            We believe in making thins better for everyone, even if just by a little bit!.
+            We strongly encourage employers to embrace diversity, equity, and inclusion as fundamental values.
           </p>
         </div>
       </div>

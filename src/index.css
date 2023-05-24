@@ -159,14 +159,16 @@ li:hover::before {
 
   .card-cta {
     padding: 1.5rem;
+    padding-bottom: .5rem;
   }
 
   .text-cta {
-    width: 65%;
+    width: 60%;
+    margin-right: 0.5rem;
   }
 
   .text-cta>h1 {
-    font-size: 26px;
+    font-size: 24px;
   }
 
   .text-cta>h2 {
@@ -177,12 +179,19 @@ li:hover::before {
     padding: 1rem;
   }
 
+  .text-value {
+    font-size: 18px;
+    font-weight: 700;
+    width: 88%;
+    margin: 0 auto;
+    padding-bottom: 1.5rem;
+  }
+
   .container-slider {
     display: flex;
     height: 200px;
     width: 90%;
     margin: 0 auto;
-    margin-bottom: 1.25rem;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
@@ -194,6 +203,7 @@ li:hover::before {
     height: 90%;
     width: 90%;
     padding: 1.5rem;
+    padding-bottom: 0.75rem;
     scroll-snap-align: center;
   }
 
