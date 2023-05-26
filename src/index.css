@@ -138,6 +138,13 @@ li:hover::before {
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
+    width: 100%;
+    padding-right: 0.25rem;
+    padding-left: 0.25rem;
+  }
+
+  .icon {
+    font-size: 18px;
   }
 
   .secDiv {
@@ -214,4 +221,43 @@ li:hover::before {
   .singleGrid:last-child {
     margin-right: 5%;
   }
+
+  .footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logoDiv {
+    text-align: center;
+  }
+
+  .logoDiv>h1 {
+    padding-bottom: 0.75rem;
+    font-size: 22px;
+  }
+
+  .divTitle {
+    text-align: center;
+    padding-bottom: 0.25rem;
+  }
+
+  .icons {
+    justify-content: space-between;
+  }
+}
+
+
+@media only screen and (max-width: 420px) {
+  form {
+    width: 98%;
+    margin: 0 auto;
+  }
+
+  .inputSearch>button {
+    font-size: 15px;
+  }
+
 }
