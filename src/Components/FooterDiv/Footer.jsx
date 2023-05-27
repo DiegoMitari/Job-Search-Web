@@ -25,11 +25,11 @@ const Footer = () => {
           Company
         </span>
 
-        <div className="grid gap-2">
-          <li className="text-white opacity-[.7] hover:opacity-[1]">About Us</li>
-          <li className="text-white opacity-[.7] hover:opacity-[1]">Features</li>
-          <li className="text-white opacity-[.7] hover:opacity-[1]">News</li>
-          <li className="text-white opacity-[.7] hover:opacity-[1]">FAQ</li>
+        <div className="grid gap-1 sm:gap-2">
+          <li className="footer-list text-white opacity-[.7] hover:opacity-[1]">About Us</li>
+          <li className="footer-list text-white opacity-[.7] hover:opacity-[1]">Features</li>
+          <li className="footer-list text-white opacity-[.7] hover:opacity-[1]">News</li>
+          <li className="footer-list text-white opacity-[.7] hover:opacity-[1]">FAQ</li>
         </div>
       </div>
 
@@ -39,11 +39,11 @@ const Footer = () => {
           Resources
         </span>
 
-        <div className="grid gap-2">
-          <li className="text-white opacity-[.7] hover:opacity-[1]">Account</li>
-          <li className="text-white opacity-[.7] hover:opacity-[1]">support Center</li>
-          <li className="text-white opacity-[.7] hover:opacity-[1]">Feedback</li>
-          <li className="text-white opacity-[.7] hover:opacity-[1]">Contact Us</li>
+        <div className="grid gap-1 sm:gap-2">
+          <li className="footer-list text-white opacity-[.7] hover:opacity-[1]">Account</li>
+          <li className="footer-list text-white opacity-[.7] hover:opacity-[1]">support Center</li>
+          <li className="footer-list text-white opacity-[.7] hover:opacity-[1]">Feedback</li>
+          <li className="footer-list text-white opacity-[.7] hover:opacity-[1]">Contact Us</li>
         </div>
       </div>
 
@@ -53,14 +53,13 @@ const Footer = () => {
           Support
         </span>
 
-        <div className="grid gap-2">
-          <li className="text-white opacity-[.7] hover:opacity-[1]">Events</li>
-          <li className="text-white opacity-[.7] hover:opacity-[1]">Promo</li>
-          <li className="text-white opacity-[.7] hover:opacity-[1]">Req Demo</li>
-          <li className="text-white opacity-[.7] hover:opacity-[1]">Careers</li>
+        <div className="grid gap-1 sm:gap-2">
+          <li className="footer-list text-white opacity-[.7] hover:opacity-[1]">Events</li>
+          <li className="footer-list text-white opacity-[.7] hover:opacity-[1]">Promo</li>
+          <li className="footer-list text-white opacity-[.7] hover:opacity-[1]">Req Demo</li>
+          <li className="footer-list text-white opacity-[.7] hover:opacity-[1]">Careers</li>
         </div>
       </div>
-
 
       {/* fourth Column */}
       <div className="grid mx-[2rem]">
@@ -68,7 +67,7 @@ const Footer = () => {
           Contact Info
         </span>
 
-        <div className="">
+        <div>
           <small className="text-[14px] text-white">
             diego89ma@gmail.com
           </small>

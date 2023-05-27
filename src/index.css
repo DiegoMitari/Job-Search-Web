@@ -228,6 +228,7 @@ li:hover::before {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-bottom: 0;
   }
 
   .logoDiv {
@@ -235,13 +236,24 @@ li:hover::before {
   }
 
   .logoDiv>h1 {
-    padding-bottom: 0.75rem;
-    font-size: 22px;
+    padding-bottom: 0.5rem;
+    font-size: 20px;
+  }
+
+  .logoDiv+p {
+    text-align: center;
+    padding-bottom: 0.25rem;
+    font-size: 15px;
   }
 
   .divTitle {
     text-align: center;
     padding-bottom: 0.25rem;
+    font-size: 14px;
+  }
+
+  .footer-list {
+    font-size: 13px;
   }
 
   .icons {
@@ -258,6 +270,33 @@ li:hover::before {
 
   .inputSearch>button {
     font-size: 15px;
+  }
+
+  .text-cta {
+    width: 60%;
+    margin-right: 0.5rem;
+  }
+
+  .text-cta>h1 {
+    font-size: 20px;
+  }
+
+  .text-cta>h2 {
+    font-size: 18px;
+  }
+
+  .div-button {
+    padding-top: 0;
+  }
+
+  .div-button>button {
+    margin-top: 0.75rem;
+    padding: 0.75rem;
+    font-size: 16px;
+  }
+
+  small {
+    font-size: 12px;
   }
 
 }
