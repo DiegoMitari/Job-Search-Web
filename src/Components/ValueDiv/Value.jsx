@@ -4,7 +4,7 @@ import security from '../../assets/security.png'
 
 const Value = () => {
   return (
-    <div className="mb-[2rem] mt-[2rem]">
+    <div className="value-container mb-[2rem] mt-[2rem]">
       <h1 className="text-value text-textColor text-[25px] py-[1rem] pb-[3rem] 
         font-bold block opacity-[.7]"
       >

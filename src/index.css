@@ -84,6 +84,12 @@ li:hover::before {
 /* Responsive design */
 @media only screen and (max-width: 540px) {
 
+  .navBar {
+    padding: 1.25rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
   .container {
     width: 100%;
   }
@@ -143,6 +149,11 @@ li:hover::before {
     padding-left: 0.25rem;
   }
 
+  .input-search {
+    font-size: 13px;
+    width: 90%;
+  }
+
   .icon {
     font-size: 18px;
   }
@@ -154,6 +165,10 @@ li:hover::before {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+  }
+
+  .value-container {
+    margin-top: 0;
   }
 
   .cardOne {
