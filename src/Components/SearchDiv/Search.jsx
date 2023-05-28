@@ -10,7 +10,7 @@ const Search = () => {
             gap-[10px] bg-white p-5 shadow-md hover:shadow-lg shadow-greyIsh-700">
 
           {/*Search by Jobs */}
-          <div className="flex gap-2 items-center">
+          <div className="flex-search flex justify-between">
             <AiOutlineSearch className='text-[25px] text-[#a5a6a6] hover:text-textColor icon' />
 
             <input type='text' className='input-search bg-transparent text-blue-500 
@@ -21,7 +21,7 @@ const Search = () => {
           </div>
 
           {/*Search by company */}
-          <div className="flex gap-2 items-center">
+          <div className="flex-search flex items-center justify-between">
             <BsHouseDoor className='text-[25px] text-[#a5a6a6] hover:text-textColor icon' />
 
             <input type='text' className='input-search bg-transparent text-blue-500 
@@ -32,7 +32,7 @@ const Search = () => {
           </div>
 
           {/*Search by location */}
-          <div className="flex gap-2 items-center">
+          <div className="flex-search flex items-center justify-between">
             <CiLocationOn className='text-[25px] text-[#a5a6a6] hover:text-textColor icon' />
 
             <input type='text' className='input-search bg-transparent text-blue-500 

@@ -133,10 +133,10 @@ li:hover::before {
 
   form {
     position: relative;
-    width: 90%;
+    width: 98%;
     margin: 0 auto;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
   }
 
 
@@ -149,9 +149,13 @@ li:hover::before {
     padding-left: 0.25rem;
   }
 
+  .flex-search {
+    width: 90%;
+  }
+
   .input-search {
     font-size: 13px;
-    width: 90%;
+    width: 80%;
   }
 
   .icon {
