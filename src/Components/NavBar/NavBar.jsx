@@ -15,12 +15,14 @@ const NavBar = () => {
         </h1>
       </div>
 
-      <div className="nav-toggle" onClick={showNavbar}>
+      <button className="nav-toggle" onClick={showNavbar}>
         <AiOutlineMenu size={30} />
-      </div>
+      </button>
 
-      <div className="menu flex gap-8" ref={navRef}>
-        <AiOutlineClose size={30} className='text-center md:hidden' onClick={showNavbar} />
+      <nav className="menu flex gap-8" ref={navRef}>
+        <button>
+          <AiOutlineClose size={30} className='text-center md:hidden' onClick={showNavbar} />
+        </button>
         <li className="menuList text-[#6f6f6f] hover:text-blueColor">Jobs</li>
         <li className="menuList text-[#6f6f6f] hover:text-blueColor">Companies</li>
         <li className="menuList text-[#6f6f6f] hover:text-blueColor">About</li>
@@ -28,7 +30,7 @@ const NavBar = () => {
         <li className="menuList text-[#6f6f6f] hover:text-blueColor">Blog</li>
         <li className="menuList text-[#6f6f6f] hover:text-blueColor">Login</li>
         <li className="menuList text-[#6f6f6f] hover:text-blueColor">Register</li>
-      </div>
+      </nav>
     </div>
 
   );

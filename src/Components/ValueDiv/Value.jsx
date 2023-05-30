@@ -40,7 +40,7 @@ const Value = () => {
             </div>
 
             <span className="font-semibold text-textColor text-[18px]">
-              Simplicity
+              improvement
             </span>
           </div>
 

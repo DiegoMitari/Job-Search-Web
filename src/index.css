@@ -42,6 +42,33 @@ li:hover::before {
   width: 100%;
 }
 
+/* cambios en navbar */
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem;
+}
+
+nav.menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.menu li {
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+  transition: all 300ms;
+  color: #6f6f6f;
+}
+
+.menu li:hover {
+  color: #2a68ff;
+}
+
+/* End */
+
 .icon {
   cursor: pointer;
 }
@@ -79,6 +106,14 @@ li:hover::before {
 
 .nav-toggle {
   display: none;
+}
+
+.logoDiv-container {
+  min-width: 250px;
+}
+
+.footer-list {
+  width: 135px;
 }
 
 /* Responsive design */
@@ -242,8 +277,9 @@ li:hover::before {
   }
 
   .footer {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    width: 100vw;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -265,6 +301,11 @@ li:hover::before {
     font-size: 15px;
   }
 
+  .footer-main {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
   .divTitle {
     text-align: center;
     padding-bottom: 0.25rem;
@@ -272,11 +313,23 @@ li:hover::before {
   }
 
   .footer-list {
+    text-align: center;
     font-size: 13px;
+    width: 105px;
+  }
+
+  .column-list-footer {
+    margin: auto .25rem;
+  }
+
+  small {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
   }
 
   .icons {
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 
