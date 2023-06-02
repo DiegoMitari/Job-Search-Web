@@ -16,7 +16,7 @@
 
 body {
   background: white;
-  width: 100vw;
+  overflow-x: hidden;
 }
 
 li {
@@ -50,12 +50,7 @@ li:hover::before {
   padding: 3rem;
 }
 
-nav.menu {
-  display: flex;
-  gap: 2rem;
-}
-
-.menu li {
+.menuList {
   list-style: none;
   cursor: pointer;
   position: relative;
@@ -63,8 +58,17 @@ nav.menu {
   color: #6f6f6f;
 }
 
-.menu li:hover {
+.menuList:hover {
   color: #2a68ff;
+}
+
+.nav-btn {
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
 }
 
 /* End */
@@ -119,10 +123,33 @@ nav.menu {
 /* Responsive design */
 @media only screen and (max-width: 540px) {
 
+  header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: #2a68ff;
+    transition: 500ms;
+    transform: translateY(-100vh);
+  }
+
   .navBar {
     padding: 1.25rem;
     padding-right: 2rem;
     padding-left: 2rem;
+    position: relative;
+    background-color: white;
+    width: 100%;
+  }
+
+  .nav-btn {
+    visibility: visible;
+    opacity: 1;
   }
 
   .container {
@@ -134,26 +161,33 @@ nav.menu {
   }
 
   .menu {
-    /* visibility: hidden;
-    opacity: 0; */
-    position: absolute;
-    top: 100px;
+    top: 68px;
     bottom: 0;
+    padding-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    justify-content: flex-start;
     background-color: #2a68ff;
-    font-size: 25px;
-    gap: 1.75rem;
-    transition: 300ms;
+    color: #e5e7eb;
+    font-size: 21px;
+    gap: 1.1rem;
+    transition: 500ms all;
     transform: translateX(300vw);
+    z-index: 100;
+    padding-right: 12%;
   }
 
-  .menu_visible {
-    /* visibility: visible;
-    opacity: 1; */
+  .menuList {
+    color: #e5e7eb;
+  }
+
+  .menuList:hover {
+    color: #6f6f6f;
+  }
+
+  .responsive_nav {
     transform: none;
-    z-index: 1;
   }
 
   .searchDiv {
@@ -191,6 +225,10 @@ nav.menu {
   .input-search {
     font-size: 13px;
     width: 80%;
+  }
+
+  select {
+    outline: none;
   }
 
   .icon {
@@ -330,6 +368,8 @@ nav.menu {
 
   .icons {
     justify-content: space-around;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 }
 

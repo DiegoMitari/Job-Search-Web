@@ -5,33 +5,33 @@ const NavBar = () => {
   const navRef = useRef();
 
   const showNavbar = () => {
-    navRef.current.classList.toggle('menu_visible');
+    navRef.current.classList.toggle('responsive_nav');
   }
   return (
-    <div className="navBar flex justify-between items-center p-[3rem]">
+    <header className="navBar">
       <div className="logoDiv">
         <h1 className="logo text-[25px] text-blueColor">
           <strong>JOB</strong>Search
         </h1>
       </div>
 
-      <button className="nav-toggle" onClick={showNavbar}>
+      <button className="nav-btn" onClick={showNavbar}>
         <AiOutlineMenu size={30} />
       </button>
 
       <nav className="menu flex gap-8" ref={navRef}>
-        <button>
+        <button className='nav-btn nav-close-btn'>
           <AiOutlineClose size={30} className='text-center md:hidden' onClick={showNavbar} />
         </button>
-        <li className="menuList text-[#6f6f6f] hover:text-blueColor">Jobs</li>
-        <li className="menuList text-[#6f6f6f] hover:text-blueColor">Companies</li>
-        <li className="menuList text-[#6f6f6f] hover:text-blueColor">About</li>
-        <li className="menuList text-[#6f6f6f] hover:text-blueColor">Contact</li>
-        <li className="menuList text-[#6f6f6f] hover:text-blueColor">Blog</li>
-        <li className="menuList text-[#6f6f6f] hover:text-blueColor">Login</li>
-        <li className="menuList text-[#6f6f6f] hover:text-blueColor">Register</li>
+        <li className="menuList">Jobs</li>
+        <li className="menuList">Companies</li>
+        <li className="menuList">About</li>
+        <li className="menuList">Contact</li>
+        <li className="menuList">Blog</li>
+        <li className="menuList">Login</li>
+        <li className="menuList">Register</li>
       </nav>
-    </div>
+    </header>
 
   );
 };

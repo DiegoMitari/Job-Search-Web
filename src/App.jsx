@@ -9,6 +9,7 @@ const App = () => {
   return (
     <div className="w-[85%] m-auto bg-white container">
       <NavBar />
+      <div></div>
       <Search />
       <Jobs />
       <Value />
